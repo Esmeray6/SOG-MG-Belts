@@ -6,7 +6,10 @@ class CfgPatches {
     units[] = {};
     weapons[] = {};
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"cba_main"};
+    requiredAddons[] = {"weapons_f_vietnam_04_c"};
     VERSION_CONFIG;
   };
 };
+
+#include "CfgMagazines.hpp"
+#include "CfgWeapons.hpp"
