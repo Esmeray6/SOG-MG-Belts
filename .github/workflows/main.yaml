@@ -1,0 +1,27 @@
+name: Package Application with Pyinstaller
+
+on:
+  release:
+    types: [created]
+
+permissions:
+  contents: write
+
+jobs:
+  run-pyinstaller:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+
+
+      - run: pip install -r requirements.txt pyinstaller
+      - run: pyinstaller .spec -y
+      # Optionally verify that it works (provided that it does not need user interaction)
+      # - run: ./dist/your-code/your-code
+      - run: Compress-Archive -Path dist/* -Destination SQM_Parser.zip
+      - uses: svenstaro/upload-release-action@2.7.0
+        with:
+          file: "SQM_Parser.zip"
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          body: "This is an automatic release of SQM parser ${{ github.ref_name }}"
+          make_latest: true
