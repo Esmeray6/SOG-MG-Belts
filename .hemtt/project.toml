@@ -1,0 +1,24 @@
+name = "SOG MG Belts"
+author = "Esmeray"
+prefix = "sog_mg_belts"
+mainprefix = "z"
+
+[files]
+include = [
+    "mod.cpp",     # These files are copied to the build directory by default
+    "meta.cpp",    # They do not need to be added to your list
+    "LICENSE",
+    "logo_ca.paa",
+    "logo_co.paa",
+]
+exclude = [
+    "*.psd",                 # By default this list is empty
+    "addons/main/README.md",
+]
+
+[properties]
+author = "Esmeray"
+url = "https://github.com/Esmeray6/SOG-MG-Belts"
+
+[version]
+git_hash = 0 # Disabled
