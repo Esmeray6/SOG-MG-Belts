@@ -22,3 +22,51 @@ url = "https://github.com/Esmeray6/SOG-MG-Belts"
 
 [version]
 git_hash = 0 # Disabled
+
+[hemtt.launch.default]
+parameters = [
+    "-skipIntro",        # These parameters are passed to the Arma 3 executable
+    "-noSplash",         # They do not need to be added to your list
+    "-showScriptErrors", # You can add additional parameters here
+    "-debug",
+    "-filePatching",
+]
+workshop = [
+    "450814997",  # CBA_A3
+    "463939057",  # ACE
+    "1779063631", # Zeus Enhanced
+    "2018593688", # Zeus Enhanced - ACE3 Compatibility
+    # Zeus Enhanced requires CBA_A3. Otherwise, none of these are required. I just want to make my life easier here. :)
+    "623475643",  # 3den Enhanced
+    "2369477168", # Advanced Dev Tools
+    "3023395342", # 3DEN Attributes Fast Load
+]
+
+
+[hemtt.launch.vn]
+parameters = [
+    "-skipIntro",        # These parameters are passed to the Arma 3 executable
+    "-noSplash",         # They do not need to be added to your list
+    "-showScriptErrors", # You can add additional parameters here
+    "-debug",
+    "-filePatching",
+]
+workshop = [
+    "450814997",  # CBA_A3
+    "463939057",  # ACE
+    "1779063631", # Zeus Enhanced
+    # Zeus Enhanced requires CBA_A3. Otherwise, none of these are required. I just want to make my life easier here. :)
+    "623475643",  # 3den Enhanced
+    "2369477168", # Advanced Dev Tools
+    "2018593688", # Zeus Enhanced - ACE3 Compatibility
+    "3023395342", # 3DEN Attributes Fast Load
+    "333310405",  # Enhanced Movement
+    "2034363662", # Enhanced Movement Rework
+    "894678801",  # Task Force Arrowhead Radio (BETA!!!)
+    "1841047025", # Prone Launcher
+    "1508091616", # Metis Marker
+    "1549103861", # Diwako's Punish unknown weapon
+    "3173558956", # Unit Voice-Overs AET AiO
+    "2930736286", # Armor Modifier - ACE
+]
+dlc = ["vn"]
