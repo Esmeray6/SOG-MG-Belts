@@ -35,7 +35,6 @@ workshop = [
     "450814997",  # CBA_A3
     "463939057",  # ACE
     "1779063631", # Zeus Enhanced
-    "2018593688", # Zeus Enhanced - ACE3 Compatibility
     # Zeus Enhanced requires CBA_A3. Otherwise, none of these are required. I just want to make my life easier here. :)
     "623475643",  # 3den Enhanced
     "2369477168", # Advanced Dev Tools
